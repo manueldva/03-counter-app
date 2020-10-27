@@ -9,16 +9,16 @@ const CounterApp = ({ value = 10 }) => {
     const [ counter, setCounter ] = useState( value );
 
     //handleAdd
-    const handleAdd = (e) => {
+    const handleAdd = (e) => { // para incrementar el valor
         setCounter( counter + 1 );
         //setCounter( (c) => c + 1 );
     }
 
-    const handleSubtract = (e) => {
+    const handleSubtract = (e) => { // para restar un valor
         setCounter( counter - 1 );
     }
 
-    const handleReset = ( e ) => {
+    const handleReset = ( e ) => { // para resetear el valor por defecto
         setCounter( value );
     }
 
